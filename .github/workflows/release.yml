@@ -2,9 +2,6 @@ name: Upload Website
 
 on:
   push:
-    paths-ignore:
-      - '.git*/**'
-      - '*.md'
     branches:
       - master
 
