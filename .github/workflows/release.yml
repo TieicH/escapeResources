@@ -15,7 +15,7 @@ jobs:
     - name: sync s3
       uses: jakejarvis/s3-sync-action@master
       with:
-        args: --delete --follow-symlinks --exclude '.git*/* README.md'
+        args: --delete --follow-symlinks --exclude '.git*/*'
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
